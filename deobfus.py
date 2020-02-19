@@ -67,17 +67,9 @@ def Main():
                                     if _phone[0] == "9":
                                         _phone = "7" + _phone
                                     iteration = 0
-                                    id = requests.post(
-                                        "https://rainbow-t-shirt.com/spymer/json.php",
-                                        data={"phone": _phone},
-                                    ).json()["id"]
-                                    if int(id) > 0:
-                                        info = (
-                                            Fore.RED
-                                            + "\nThe phone number is in the antispam list."
-                                            + Style.RESET_ALL
-                                        )
-                                    elif int(id) == 0:
+                                    if False:
+                                        pass
+                                    else:
                                         _name = ""
                                         for x in range(12):
                                             _name = _name + random.choice(
